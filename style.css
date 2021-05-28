@@ -307,6 +307,12 @@ body{
         width: 100%;
     }
 
+    .my-resume{
+        width: 80%;
+    }
+
+    
+
     .project-details{
         display: none;
     }
