@@ -89,24 +89,35 @@ body{
 .myself{
     width: fit-content;
     color: white;
+    text-align: justify;
     font-size: 18px;
     padding: 5%;
 }
 
-.my-resume button{
-    margin-top: 30px;
-    background-color: #00BFA6;
-    color: white;
+.my-resume{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 20px;
     border: 4px solid white;
-    width: 250px;
-    height: 48px;
-    font-size: 24px;
     cursor: pointer;
 }
 
-.my-resume button:hover{
+.my-resume:hover{
     background-color: white;
+}
+
+.my-resume a[href]{
+    text-decoration: none;
+    color: white;
+    line-height: 24px;
+    width: 100%;
+    text-align: center;
+}
+
+.my-resume a[href]:hover{
     color: #00BFA6;
+    font-weight: bold;
 }
 
 .skills{
@@ -210,9 +221,10 @@ body{
     color: white;
 }
 
-/* .contact h1{
-    text-align: center;
-} */
+.contact a[href]{
+    text-decoration: none;
+    color: white;
+}
 
 .fa-github, .fa-linkedin, .fa-envelope-open-text, .fa-twitter{
     font-size: 5rem;
@@ -238,6 +250,11 @@ body{
     border: 3px solid #00BFA6;
     font-size: 1rem;
     font-weight: bold;
+}
+
+.device-specific button:hover{    
+    background-color: #00BFA6;
+    color: white;
 }
 
 .cell{
@@ -277,11 +294,6 @@ body{
         align-items: center;
     }
 
-    .my-resume button{
-        width: 200px;
-        font-size: 1rem;
-    }
-
     .skills{
         flex-flow: column;
         align-items: center;
@@ -307,6 +319,10 @@ body{
 
 @media(max-width:1180px){
     .my-project img{
+        width: 90%;
+    }
+
+    .content img{
         width: 90%;
     }
 }
