@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.intro{
+    animation: slideInLeft;
+    animation-duration: 6s;
+    padding: 4rem;
+    padding-top: 10rem;
+}
+
+.introduction{
+    display: inline-block;
+    font-family: 'Lucida Sans','Comfortaa', 'Pattaya', 'Fredoka One', 'Pacifico', 'Courier New', Courier, monospace;
+    font-size: 48px;
+}
+
+.name{
+    color: #00BFA6;
+}
+
+.know-more{
+    padding-top: 2rem;
+}
+
+.know-more button{
+    width: 240px;
+    height: 48px;
+    font-size: 32px;
+    background-color: white;
+    border: 4px solid #00BFA6;
+    color: #00BFA6;
+    cursor: pointer;
+}
+
+.know-more button:hover{
+    background-color: #00BFA6;
+    color: white;
+}
+
+.complete-info{
+    background-color: #00BFA6;
+    display: flex;
+    flex-flow: column;
+}
+
+.complete-info h1{
+    text-align: center;
+    color: white;
+    animation: slideInUp;
+    animation-duration: 3s;
+}
+
+.resume{
+    animation: slideInUp;
+    animation-duration: 4s;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    flex-flow: row;
+}
+
+.profile-pic{
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.profile-pic img{
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+}
+
+.myself{
+    width: fit-content;
+    color: white;
+    font-size: 18px;
+    padding: 5%;
+}
+
+.my-resume button{
+    margin-top: 30px;
+    background-color: #00BFA6;
+    color: white;
+    border: 4px solid white;
+    width: 250px;
+    height: 48px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.my-resume button:hover{
+    background-color: white;
+    color: #00BFA6;
+}
+
+.projects{
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    transform: skewY(-3deg);
+}
+
+.projects h1{
+    padding-top: 100px;
+    color: #00BFA6;
+    text-align: center;
+    transform: skewY(3deg);
+}
+
+.my-project{
+    display: flex;
+    flex-flow: row;
+    flex-direction: row-reverse;
+    padding: 80px;
+    padding-left: 150px;
+    transform: skewY(3deg);
+}
+
+.my-project img{
+    width: 70%;
+}
+
+.project-details {
+    width: max-content;
+}
+
+.my-project h3{
+    text-align: center;
+    color: #00BFA6;
+}
+
+.my-project p{
+    text-align: justify;
+}
+
+.my-project a[href]{
+    text-decoration: none;
+    color: #00BFA6;
+    width: 250px;
+    height: 36px;
+    border: 2px solid #00BFA6;
+    padding: 15px;
+}
+
+.my-project a[href]:hover{
+    background-color: #00BFA6;
+    color: white;
+    cursor: pointer;
+}
+
+.contact{
+    margin: auto;
+    width: max-content;
+    color: white;
+}
+
+.contact h1{
+    text-align: center;
+    animation: slideInUp;
+    animation-duration: 6s;
+}
+
+.fas, .fab{
+    font-size: 5rem;
+    padding: 30px;
+    animation: slideInUp;
+    animation-duration: 6s;
+}
+
+.fab:hover, .fas:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.device-specific{
+    display: none;
+}
+
+.device-specific button{    
+    background-color: white;
+    color: #00BFA6;
+    width: max-content;
+    padding: 1.5rem;
+    border: 3px solid #00BFA6;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.cell{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+@media(max-width:800px){
+    .introduction{
+        font-size: 1.3rem;
+    }
+
+    .device-specific{
+        display: flex;
+        margin: auto;
+        width: max-content;
+    }
+
+    .resume{
+        flex-flow: column;
+    }
+
+    .myself{
+        font-size: 0.8rem;
+    }
+
+    .profile-pic{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .my-resume{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .my-resume button{
+        width: 200px;
+        font-size: 1rem;
+    }
+
+    .my-project img{
+        width: 100%;
+    }
+
+    .project-details{
+        display: none;
+    }
+
+    .fas, .fab{
+        font-size: 3rem;
+        padding: 1rem;
+    }
+}
+
+@media(max-width:1180px){
+    .my-project img{
+        width: 90%;
+    }
+}
