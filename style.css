@@ -13,6 +13,15 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.headings{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    animation: slideInUp;
+    animation-duration: 6s;
+    color: white;
+}
+
 .intro{
     animation: slideInLeft;
     animation-duration: 6s;
@@ -55,12 +64,12 @@ body{
     flex-flow: column;
 }
 
-.complete-info h1{
+/* .complete-info h1{
     text-align: center;
     color: white;
     animation: slideInUp;
     animation-duration: 3s;
-}
+} */
 
 .resume{
     animation: slideInUp;
@@ -107,6 +116,54 @@ body{
     color: #00BFA6;
 }
 
+.skills{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding: 1%;
+    transform: skewY(3deg);
+}
+
+.my-skill{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 25px;
+    border-radius: 2px;
+    color: white;
+    width: 260px;
+    height: 300px;
+    background-color: rgb(247, 243, 243);
+    border: 4px solid rgb(247, 246, 246);
+    box-shadow: 4px 4px 4px 4px rgb(99, 99, 99);
+}
+
+
+.content{
+    text-align: center;
+    padding: 35px;
+    /* line-height: 24px; */
+    background-color: #00BFA6;
+}
+
+.content a[href]{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 0.5rem;
+}
+
+.refer{
+    margin-top: 12px;
+}
+
+.fa-laptop-code, .fa-project-diagram, .fa-file-code{
+    color: #00BFA6;
+    font-size: 120px;
+    margin: auto;
+}
+
 .projects{
     display: flex;
     flex-flow: column;
@@ -125,8 +182,9 @@ body{
     display: flex;
     flex-flow: row;
     flex-direction: row-reverse;
-    padding: 80px;
-    padding-left: 150px;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
     transform: skewY(3deg);
 }
 
@@ -136,6 +194,7 @@ body{
 
 .project-details {
     width: max-content;
+    padding: 40px;
 }
 
 .my-project h3{
@@ -145,6 +204,7 @@ body{
 
 .my-project p{
     text-align: justify;
+    max-width: 350px;
 }
 
 .my-project a[href]{
@@ -168,20 +228,18 @@ body{
     color: white;
 }
 
-.contact h1{
+/* .contact h1{
     text-align: center;
-    animation: slideInUp;
-    animation-duration: 6s;
-}
+} */
 
-.fas, .fab{
+.fa-github, .fa-linkedin, .fa-envelope-open-text, .fa-twitter{
     font-size: 5rem;
     padding: 30px;
     animation: slideInUp;
     animation-duration: 6s;
 }
 
-.fab:hover, .fas:hover{
+.fa-github:hover, .fa-linkedin:hover, .fa-envelope-open-text:hover, .fa-twitter:hover{
     color: black;
     cursor: pointer;
 }
@@ -242,6 +300,11 @@ body{
         font-size: 1rem;
     }
 
+    .skills{
+        flex-flow: column;
+        align-items: center;
+    }
+
     .my-project img{
         width: 100%;
     }
@@ -250,7 +313,7 @@ body{
         display: none;
     }
 
-    .fas, .fab{
+    .fa-github, .fa-linkedin, .fa-envelope-open-text, .fa-twitter{
         font-size: 3rem;
         padding: 1rem;
     }

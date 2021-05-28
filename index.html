@@ -9,6 +9,7 @@
     <link rel="icon" href="apple-touch-icon.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    
 </head>
 <body>
     <!-- Introduction -->
@@ -25,7 +26,9 @@
     
     <!-- Resume -->
     <div class="complete-info" id="complete-info">
-        <h1>ABOUT ME</h1>
+        <div class="headings" id="headings">
+            <h1>ABOUT ME</h1>
+        </div>
         <div class="resume" id="resume">
             <div class="profile-pic">
                 <img src="profile.jpg" alt="profile-pic">
@@ -41,9 +44,42 @@
             </div>
         </div>
 
+        
         <!-- Projects -->
         <div class="projects" id="projects">
-            <h1>PROJECTS</h1>
+            <!-- Skills -->
+            <div class="container" id="container">
+                <div class="headings" id="headings">
+                    <h1>SKILLS</h1>
+                </div>
+                <div class="skills" id="skills">
+                    <div class="my-skill" id="my-skill1">
+                        <i class="fas fa-laptop-code"></i>
+                        <div class="content" id="content">
+                            C, C++, JAVA, PYTHON, JAVASCRIPT, Kotlin <br>
+                            <div class="refer"><a href="#">Click Here</a></div>
+                        </div> 
+                    </div>
+                    <div class="my-skill" id="my-skill2">
+                        <i class="fas fa-project-diagram"></i>
+                        <div class="content" id="content">
+                            Data Structures And Algorithms, Problem Solving <br>
+                            <div class="refer"><a href="#">Click Here</a></div>
+                        </div> 
+                    </div>
+                    <div class="my-skill" id="my-skill3">
+                        <i class="fas fa-file-code"></i>
+                        <div class="content" id="content">
+                            Web Development with Django, Basics of Node.JS <br>
+                            <div class="refer"><a href="#">Click Here</a></div>
+                        </div>
+                    </div>
+                    <!-- <div class="my-skill" id="my-skill4"></div> -->
+                </div>
+            </div>
+            <div class="headings" id="headings">
+                <h1>PROJECTS</h1>
+            </div>
             <div class="my-project" id="project1">
                 <div class="cell">
                     <img src="./typing-speed.svg" alt="">
@@ -61,7 +97,7 @@
                 <div class="cell">
                     <img src="./bookmarks.svg" alt="">
                     <div class="device-specific" id="device-specific">
-                        <button>Typing Speed Checker</button>
+                        <button>Bookmarks Keeper</button>
                     </div>
                 </div>
                 <div class="project-details" id="project2-details">
@@ -74,7 +110,7 @@
                 <div class="cell">
                     <img src="./covid.svg" alt="">
                     <div class="device-specific" id="device-specific">
-                        <button>Typing Speed Checker</button>
+                        <button>Covid Case Tracker</button>
                     </div>
                 </div>
                 <div class="project-details" id="project2-details">
@@ -87,7 +123,7 @@
                 <div class="cell">
                     <img src="./drawing.svg" alt="">
                     <div class="device-specific" id="device-specific">
-                        <button>Typing Speed Checker</button>
+                        <button>Paint Clone</button>
                     </div>
                 </div>
                 <div class="project-details" id="project2-details">
@@ -101,7 +137,9 @@
 
         <!-- Contacts -->
         <div class="contact" id="contact">
-            <h1>CONTACTS</h1>
+            <div class="headings" id="headings">
+                <h1>CONTACTS</h1>
+            </div>
             <span class="github" id="github"><i class="fab fa-github"></i></span>
             <span class="linkedIn" id="linkedIn"><i class="fab fa-linkedin"></i></span>
             <span class="email" id="email"><i class="fas fa-envelope-open-text"></i></span>
