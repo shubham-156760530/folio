@@ -4,29 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shubham at NITKKR</title>
+    <title>Portfolio | Shubham Maurya</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="apple-touch-icon.png" type="image/png">
+    <link rel="icon" href="./favicon-32x32.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     
 </head>
 <body>
+    <!-- Header -->
+    <div class="headers" id="headers">
+        <div class="dropdown">
+            <button class="dropbtn">
+                <i class="fas fa-chevron-circle-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#heading1">About Me</a>
+                <a href="#heading2">Skills</a>
+                <a href="#heading3">Projects</a>
+                <a href="#heading4">Contacts</a>
+            </div>
+        </div>
+    </div>
+
     <!-- Introduction -->
     <div class="intro" id="intro">
         <div class="introduction" id="introduction">
-            Hi ! I'm <span class="name" id="name"> Shubham Maurya </span><br>I'm MCA Student at 
+            <p>Hey, hello, nice to meet you !</p>
+            I'm <span class="name" id="name"> Shubham Maurya ,</span><br>I'm MCA Student at 
             <span class="name" id="name">NIT Kurukshetra</span>
         </div>
 
         <div class="know-more" id="know-more">
-            <button>know more</button>
+            <a href="#heading1"><button>know more</button></a>
         </div>
     </div>
     
     <!-- Resume -->
-    <div class="complete-info" id="complete-info">
-        <div class="headings" id="headings">
+    <div class="complete-info" id="complete-info" o>
+        <div class="headings" id="heading1">
             <h1>ABOUT ME</h1>
         </div>
         <div class="resume" id="resume">
@@ -39,7 +55,7 @@
                     technologies specially related with web development.
                 </div>
                 <div class="my-resume" id="my-resume">
-                    <a href="./SM.pdf" target="_blank">RESUME</a>
+                    <a href="./SM.pdf" target="_blank">VIEW RESUME</a>
                 </div>
             </div>
         </div>
@@ -49,7 +65,7 @@
         <div class="projects" id="projects">
             <!-- Skills -->
             <div class="container" id="container">
-                <div class="headings" id="headings">
+                <div class="headings" id="heading2">
                     <h1>SKILLS</h1>
                 </div>
                 <div class="skills" id="skills">
@@ -73,20 +89,20 @@
                     </div>
                 </div>
             </div>
-            <div class="headings" id="headings">
+            <div class="headings" id="heading3">
                 <h1>PROJECTS</h1>
             </div>
             <div class="my-project" id="project1">
                 <div class="cell">
-                    <img src="./typing-speed.svg" alt="">
+                    <img src="./typing-speed.svg" alt="Oops..">
                     <div class="device-specific" id="device-specific">
                         <button>Typing Speed Checker</button>
                     </div>
                 </div>
                 <div class="project-details" id="project1-details">
                     <h3>Test Your Typing Speed</h3>
-                    <p>Simple website using HTML, CSS and JavaScript for checking typing speed.</p><br>
-                    <a href="https://shubham-156760530.github.io/typing-speed-checker/">Check Your's</a>    
+                    <p>Simple website using HTML, CSS and JavaScript for testing your typing speed. Result will show the number of characters and number of words that you write in 1 minute.</p><br>
+                    <a href="https://shubham-156760530.github.io/typing-speed-checker/" target="_blank">Check Your's</a>    
                 </div>
             </div>
             <div class="my-project" id="project2">
@@ -98,8 +114,8 @@
                 </div>
                 <div class="project-details" id="project2-details">
                     <h3>Bookmarks Keeper</h3>
-                    <p>Simple website using HTML, CSS and JavaScript for checking typing speed.</p><br>
-                    <a href="https://shubham-156760530.github.io/typing-speed-checker/">Add Your's</a>    
+                    <p>Simple web app where you can save your bookmarks and manage them easily.</p><br>
+                    <a href="https://shubham-156760530.github.io/typing-speed-checker/" target="_blank">Add Your's</a>    
                 </div>
             </div>
             <div class="my-project" id="project3">
@@ -111,21 +127,21 @@
                 </div>
                 <div class="project-details" id="project2-details">
                     <h3>Covid Case Tracker</h3>
-                    <p>Simple website using HTML, CSS and JavaScript for checking typing speed.</p><br>
-                    <a href="https://shubham-156760530.github.io/typing-speed-checker/">Track Cases</a>
+                    <p>Website for tracking covid cases in real-time using python library. Website is build on HTML, CSS, JS, Django, Matplotlib.</p><br>
+                    <a href="https://shubham-156760530.github.io/typing-speed-checker/" target="_blank">Track Cases</a>
                 </div>
             </div>
             <div class="my-project" id="project4">
                 <div class="cell">
-                    <img src="./drawing.svg" alt="">
+                    <img src="./art.svg" alt="">
                     <div class="device-specific" id="device-specific">
                         <button>Paint Clone</button>
                     </div>
                 </div>
                 <div class="project-details" id="project2-details">
                     <h3>Paint Clone</h3>
-                    <p>Simple website using HTML, CSS and JavaScript for checking typing speed.</p><br>
-                    <a href="https://shubham-156760530.github.io/typing-speed-checker/">Try It</a>
+                    <p>This is a simple web app for Paint where you can draw anything and can save the work and can download the work. This web app is build on HTML, CSS and JavaScript.</p><br>
+                    <a href="https://shubham-156760530.github.io/typing-speed-checker/" target="_blank">Try It</a>
                     
                 </div>
             </div>
@@ -133,15 +149,23 @@
 
         <!-- Contacts -->
         <div class="contact" id="contact">
-            <div class="headings" id="headings">
-                <h1>CONTACTS</h1>
+            <div class="headings" id="heading4">
+                <!-- <h1>CONTACTS</h1> -->
+                <h1>Let's Get In Touch</h1>
             </div>
-            <span class="github" id="github"><a href="#"><i class="fab fa-github"></i></a></span>
-            <span class="linkedIn" id="linkedIn"><a href="https://www.linkedin.com/in/shubham-maurya-78a39b205/"><i class="fab fa-linkedin"></i></a></span>
-            <span class="email" id="email"><a href="webdshubham@gmail.com"><i class="fas fa-envelope-open-text"></i></a></span>
-            <span class="twitter" id="twitter"><a href="https://twitter.com/Shubham15525186?s=08/"><i class="fab fa-twitter"></a></i></span>
+            <span class="github" id="github"><a href="#" target="_blank"><i class="fab fa-github"></i></a></span>
+            <span class="linkedIn" id="linkedIn"><a href="https://www.linkedin.com/in/shubham-maurya-78a39b205/" target="_blank"><i class="fab fa-linkedin"></i></a></span>
+            <span class="email" id="email"><a href="webdshubham@gmail.com" target="_blank"><i class="fas fa-envelope-open-text"></i></a></span>
+            <span class="twitter" id="twitter"><a href="https://twitter.com/Shubham15525186?s=08/" target="_blank"><i class="fab fa-twitter"></a></i></span>
+            <div class="go-up" id="go-up">
+                <a href="#headers"><i class="fas fa-angle-up"></i></a>
+                <span class="owner" id="owner">
+                    RETURN TO TOP
+                </span>
+            </div>
         </div>
     </div>
+
     <!-- Script -->
     <script src="script.js"></script>
 </body>

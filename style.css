@@ -3,14 +3,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
+:root{
+    --primary-color : white;
+    --secondary-color : black;
+}
+
 html{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
     padding: 0%;
     margin: 0%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: 'Comfortaa'; */
+    background-color: var(--primary-color);
+    /* color: var(--primary-color); */
+}
+
+.headers{
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+}
+
+.dropbtn{
+    background-color: #00BFA6;
+    border-radius: 50%;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-chevron-circle-down{
+    font-size: 48px;
+}
+
+.fa-chevron-circle-down:hover{
+    transform: rotate(180deg);
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    width: max-content;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: var(--primary-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: #00BFA6;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #00BFA6;
 }
 
 .headings{
@@ -18,13 +85,13 @@ body{
     flex-flow: column;
     align-items: center;
     animation: slideInUp;
-    animation-duration: 6s;
+    animation-duration: 3s;
     color: white;
 }
 
 .intro{
     animation: slideInLeft;
-    animation-duration: 6s;
+    animation-duration: 3s;
     padding: 4rem;
     padding-top: 10rem;
 }
@@ -33,6 +100,12 @@ body{
     display: inline-block;
     font-family: 'Lucida Sans','Comfortaa', 'Pattaya', 'Fredoka One', 'Pacifico', 'Courier New', Courier, monospace;
     font-size: 48px;
+}
+
+.introduction p{
+    font-size: 20px;
+    line-height: 18px;
+    font-style: oblique;
 }
 
 .name{
@@ -47,7 +120,7 @@ body{
     width: 240px;
     height: 48px;
     font-size: 32px;
-    background-color: white;
+    background-color: var(--primary-color);
     border: 4px solid #00BFA6;
     color: #00BFA6;
     cursor: pointer;
@@ -66,7 +139,7 @@ body{
 
 .resume{
     animation: slideInUp;
-    animation-duration: 4s;
+    animation-duration: 3s;
     padding: 60px;
     display: flex;
     flex-direction: column;
@@ -97,26 +170,24 @@ body{
 .my-resume{
     display: flex;
     flex-flow: column;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 20px;
-    border: 4px solid white;
     cursor: pointer;
-}
-
-.my-resume:hover{
-    background-color: white;
 }
 
 .my-resume a[href]{
     text-decoration: none;
     color: white;
-    line-height: 24px;
-    width: 100%;
+    line-height: 36px;
+    width: 200px;
+    height: 36px;
+    border: 2px solid white;
     text-align: center;
 }
 
 .my-resume a[href]:hover{
     color: #00BFA6;
+    background-color: var(--primary-color);
     font-weight: bold;
 }
 
@@ -149,6 +220,7 @@ body{
 
 .refer{
     margin-top: 12px;
+    text-align: center;
 }
 
 .fa-laptop-code, .fa-project-diagram, .fa-file-code{
@@ -160,7 +232,7 @@ body{
 .projects{
     display: flex;
     flex-flow: column;
-    background-color: white;
+    background-color: var(--primary-color);
     transform: skewY(-3deg);
 }
 
@@ -233,7 +305,11 @@ body{
     animation-duration: 6s;
 }
 
-.fa-github:hover, .fa-linkedin:hover, .fa-envelope-open-text:hover, .fa-twitter:hover{
+.fa-angle-up{
+    font-size: 3.5rem;
+}
+
+.fa-github:hover, .fa-linkedin:hover, .fa-envelope-open-text:hover, .fa-twitter:hover, .fa-angle-up:hover{
     color: black;
     cursor: pointer;
 }
@@ -243,7 +319,7 @@ body{
 }
 
 .device-specific button{    
-    background-color: white;
+    background-color: var(--primary-color);
     color: #00BFA6;
     width: max-content;
     padding: 1.5rem;
@@ -261,6 +337,13 @@ body{
     display: flex;
     flex-flow: column;
     align-items: center;
+}
+
+.go-up {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: 24px;
 }
 
 @media(max-width:800px){
@@ -308,7 +391,7 @@ body{
     }
 
     .my-resume{
-        width: 70%;
+        width: 100%;
     }
 
     .my-resume a[href]{
