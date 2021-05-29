@@ -272,7 +272,7 @@ body{
     max-width: 350px;
 }
 
-.my-project a[href]{
+.project-details a[href]{
     text-decoration: none;
     color: #00BFA6;
     width: 250px;
@@ -281,7 +281,7 @@ body{
     padding: 15px;
 }
 
-.my-project a[href]:hover{
+.project-details a[href]:hover{
     background-color: #00BFA6;
     color: white;
     cursor: pointer;
@@ -318,19 +318,18 @@ body{
     display: none;
 }
 
-.device-specific button{    
-    background-color: var(--primary-color);
+.device-specific a[href]{ 
+    text-decoration: none;
+    padding: 10px;
     color: #00BFA6;
-    width: max-content;
-    padding: 1.5rem;
-    border: 3px solid #00BFA6;
-    font-size: 1rem;
+    background-color: white;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
-.device-specific button:hover{    
-    background-color: #00BFA6;
+.device-specific a[href]:hover{    
     color: white;
+    background-color: #00BFA6;
 }
 
 .cell{
@@ -357,8 +356,9 @@ body{
 
     .device-specific{
         display: flex;
-        margin: auto;
-        width: max-content;
+        flex-flow: column;
+        align-items: center;
+        border: 2px solid #00BFA6;
     }
 
     .resume{
