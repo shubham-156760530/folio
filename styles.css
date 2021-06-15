@@ -61,14 +61,15 @@ body{
     z-index: 1;
 }
 
-.dropdown-content a{
+.dropdown-content a[href]{
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover{
+.dropdown-content a[href]:hover{
+    text-decoration: none;
     background-color: #00BFA6;
 }
 
