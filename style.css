@@ -191,7 +191,7 @@ body{
     font-weight: bold;
 }
 
-.skills{
+.skills, .certifications{
     display: flex;
     flex-flow: row;
     justify-content: center;
@@ -199,7 +199,7 @@ body{
     transform: skewY(3deg);
 }
 
-.my-skill{
+.my-skill, .my-certificate{
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -272,7 +272,7 @@ body{
     max-width: 350px;
 }
 
-.project-details a[href]{
+.project-details a[href], .card-body a[href]{
     text-decoration: none;
     color: #00BFA6;
     width: 250px;
@@ -281,7 +281,7 @@ body{
     padding: 15px;
 }
 
-.project-details a[href]:hover{
+.project-details a[href]:hover, .card-body a[href]:hover{
     background-color: #00BFA6;
     color: white;
     cursor: pointer;
@@ -381,7 +381,7 @@ body{
         align-items: center;
     }
 
-    .skills{
+    .skills, .certifications{
         flex-flow: column;
         align-items: center;
     }
